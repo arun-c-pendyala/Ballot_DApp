@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "name": "Hillary Clinton",
+    "picture": "images/hillary.jpg",
+    "age": 70,
+    "party": "Democratic"
+  },
+  {
+    "id": 1,
+    "name": "Donald Trump",
+    "picture": "images/donald.jpg",
+    "age": 71,
+    "party": "Republican"
+  },
+  {
+    "id": 2,
+    "name": "Bernie Sanders",
+    "picture": "images/bernie.jpg",
+    "age": 76,
+    "party": "Democratic"
+  },
+  {
+    "id": 3,
+    "name": "Ted Cruz",
+    "picture": "images/ted.jpg",
+    "age": 47,
+    "party": "Republican"
+  }
+]
