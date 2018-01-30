@@ -45,7 +45,7 @@
             <strong>Age</strong>: <span class="age">70</span><br/>
             <strong>Party</strong>: <span class="party">Democratic</span><br/><br/>
             <button class="btn btn-default btn-vote" type="button" data-id="0">Vote</button>
-            <p class="label label-info" id = "vote-count"> 0 </p>
+
           </div>
         </div>
       </div>
@@ -53,27 +53,37 @@
 
     <div class="container">
       <div class="row">
-        <input type="text" id="enter_address"  placeholder="Enter address"value="" />
+        <center> <input type="text" id="enter_address"  placeholder="Enter address"value="" /> </center>
+        <br>
+        <center> <button class="btn btn-info" type = "button" id = "register">Register</button> </center>
+        <br>
         <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <button class="btn btn-info" type = "button" id = "register">Register</button>
-
+          <button class="btn btn-success btn-block" type = "button" id = "win-count">Declare Winner</button>
         </div>
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <button class="btn btn-success" type = "button" id = "win-count">Declare Winner</button>
-
-        </div>
+        <br>
       </div>
-
     </div>
-
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
+    <script>
+
+    var docElm = document.documentElement;
+    if (docElm.requestFullscreen) {
+        docElm.requestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+    else if (docElm.mozRequestFullScreen) {
+    docElm.mozRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+    else if (docElm.webkitRequestFullScreen) {
+        docElm.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+    </script>
   </body>
 </html>
